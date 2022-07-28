@@ -318,7 +318,7 @@
     })
       .done(function () {
 		hidePasswordInput()
-		document.getElementById('para').innerHTML = '<h1>Thankyou for registering to Scholar Chat! <br> Please Login <a href="http://localhost:3000">here</a> </h1>'
+		document.getElementById('para').innerHTML = '<h1>Thankyou for registering to Scholar Chat! <br> Please Login <a href="https://scholar-chat-orcid.herokuapp.com">here</a> </h1>'
       })
       .fail(function (jqXHR, textStatus, errorThrown) {
         showError($);
