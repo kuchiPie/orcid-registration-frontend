@@ -309,7 +309,7 @@
 
   function submitData() {
     console.log("Submiting data");
-    nameUser = signedInIdToken.given_name + signedInIdToken.family_name
+    nameUser = signedInIdToken.given_name + ' ' + signedInIdToken.family_name
   
     jQuery.ajax({
       url: submitUri,
