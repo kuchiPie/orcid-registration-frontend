@@ -309,11 +309,12 @@
 
   function submitData() {
     console.log("Submiting data");
+    nameUser = signedInIdToken.given_name + signedInIdToken.given_name
   
     jQuery.ajax({
       url: submitUri,
       type: "POST",
-      data: JSON.stringify({ name: signedInIdToken.given_name, orcid: signedInIdToken.sub, password: document.getElementById('pwd').value }),
+      data: JSON.stringify({ name: nameUser, orcid: signedInIdToken.sub, password: document.getElementById('pwd').value }),
       contentType: "application/json; charset=utf-8",
     })
       .done(function () {
