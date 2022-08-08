@@ -138,8 +138,8 @@
                   showSuccess($, id_token, signedInIdToken);
                 }
               } else {
+                console.log(141);
                 signedInIdToken = null;
-                console.log(1);
                 showError($);
               }
             }
